@@ -31,6 +31,7 @@ namespace HiddenTextInPdfReportSampleProject
         private void InitializeComponent()
         {
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // simpleButton1
@@ -44,11 +45,22 @@ namespace HiddenTextInPdfReportSampleProject
             this.simpleButton1.Text = "Create PDF Report with Hidden Text";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(496, 70);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(422, 87);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Click the button to create the PDF which should auto open and then do a search fo" +
+    "r HRS-2XS-IRC-005 l19 and you will see the hidden text";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 241);
+            this.ClientSize = new System.Drawing.Size(1087, 241);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.simpleButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -56,12 +68,14 @@ namespace HiddenTextInPdfReportSampleProject
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private SimpleButton simpleButton1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
