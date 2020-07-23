@@ -98,7 +98,7 @@ namespace HiddenTextInPdfReportSampleProject
             float aval_width = xtraReport.PageWidth - xtraReport.Margins.Left - xtraReport.Margins.Right;
 
             String line;
-            System.IO.StreamReader file = new System.IO.StreamReader(@"c:\_store\data_for_hidden_text.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(@".\..\..\data_for_hidden_text.txt");
 
             XRTable table = new XRTable();
             table.Font = new Font("Arial", 12, FontStyle.Regular);
