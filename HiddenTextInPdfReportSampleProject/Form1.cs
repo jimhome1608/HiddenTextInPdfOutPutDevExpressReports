@@ -136,6 +136,7 @@ namespace HiddenTextInPdfReportSampleProject
             String fileName = Directory.GetCurrentDirectory() + "reportWithHiddenText.pdf";
             xtraReport.ExportToPdf(fileName);
             System.Diagnostics.Process.Start(fileName, "");
+            MessageBox.Show($"reportWithHiddenText.pdf has been created and saved to \n\n {fileName}");
         }
 
     }
